@@ -14,7 +14,7 @@ public class Person {
 
     @Override
     public String toString(){
-        return firstName + " "+lastName+ " hat " + points + " points";
+        return firstName + " "+lastName+ " har " + points + " point";
     }
 
     public String getFirstName() {
