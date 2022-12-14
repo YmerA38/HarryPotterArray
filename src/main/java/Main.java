@@ -33,9 +33,10 @@ public class Main {
         }
         System.out.println("total point :"+loopMethods.calculateTotalPoints(personer));
         Person p = loopMethods.minPoints(personer);
-        System.out.println(p.getFirstName()+" her færrest point, med kun "+p.getPoints()+" point");
+        System.out.println(p.getFirstName()+" har færrest point, med kun "+p.getPoints()+" point");
         p = loopMethods.maxPoints(personer);
-        System.out.println(p.getFirstName()+" her flest point, med hele "+p.getPoints()+" point");
+        System.out.println(p.getFirstName()+" har flest point, med hele "+p.getPoints()+" point");
+        System.out.println("Gennemsnittet er : "+loopMethods.avgPoints(personer));
 
         //System.out.println("\n"+person1+"\n"+person2+"\n"+person3);
 

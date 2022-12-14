@@ -19,6 +19,9 @@ public class LoopMethods {
         Arrays.sort(personer, new ComparatorPoints());
         return personer[personer.length-1];
     }
+    public int avgPoints(Person[] personer){
+        return calculateTotalPoints(personer)/personer.length;
+    }
 
 
 
