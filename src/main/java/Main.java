@@ -32,6 +32,8 @@ public class Main {
             System.out.println(person);
         }
         System.out.println("total point :"+loopMethods.calculateTotalPoints(personer));
+        Person p = loopMethods.minPoints(personer);
+        System.out.println(p.getFirstName()+" her færrest point, med kun "+p.getPoints()+" point");
 
         //System.out.println("\n"+person1+"\n"+person2+"\n"+person3);
 
