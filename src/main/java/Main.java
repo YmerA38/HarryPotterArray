@@ -10,7 +10,15 @@ public class Main {
         person2.addPoints(420);
         person3.addPoints(231);
 
-        Person[] personer = {person1,person2,person3};
+        //Person[] personer = {person1,person2,person3};
+        Person[] personer = new Person[5];
+        personer[0] = person1;
+        personer[2] = person3;
+        personer[3] = person2;
+
+        Person person4 = new Person("Ginny","Weasley");
+        person4.addPoints(1000);
+        personer[1] = person4;
         System.out.println(Arrays.toString(personer));
         for (Person person : personer){
             System.out.println(person);
