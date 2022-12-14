@@ -12,6 +12,9 @@ public class Main {
 
         Person[] personer = {person1,person2,person3};
         System.out.println(Arrays.toString(personer));
+        for (Person person : personer){
+            System.out.println(person);
+        }
 
         //System.out.println("\n"+person1+"\n"+person2+"\n"+person3);
 
