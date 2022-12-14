@@ -6,7 +6,7 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.points = 0;
+        this.points = 0; // det er merge der har lavet denne linie
         this.points = 0;
     }
 

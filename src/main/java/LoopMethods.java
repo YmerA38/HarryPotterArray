@@ -15,4 +15,11 @@ public class LoopMethods {
        Arrays.sort(personer,new ComparatorPoints());
        return personer[0];
     }
+    public Person maxPoints(Person[] personer){
+        Arrays.sort(personer, new ComparatorPoints());
+        return personer[personer.length-1];
+    }
+
+
+
 }
