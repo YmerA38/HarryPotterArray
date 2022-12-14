@@ -22,6 +22,14 @@ public class LoopMethods {
     public int avgPoints(Person[] personer){
         return calculateTotalPoints(personer)/personer.length;
     }
+    public Person findByFirstName(Person[] personer,String search){
+        for (Person person:personer){
+            if(person.getFirstName().equals(search)) {
+                return person;
+            }
+        }
+        return null;
+    }
 
 
 
