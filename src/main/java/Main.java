@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args){
         Person person1 = new Person("Harry","Potter");
@@ -8,7 +10,10 @@ public class Main {
         person2.addPoints(420);
         person3.addPoints(231);
 
-        System.out.println("\n"+person1+"\n"+person2+"\n"+person3);
+        Person[] personer = {person1,person2,person3};
+        System.out.println(Arrays.toString(personer));
+
+        //System.out.println("\n"+person1+"\n"+person2+"\n"+person3);
 
 
     }
