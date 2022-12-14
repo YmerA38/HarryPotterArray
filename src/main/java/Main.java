@@ -19,6 +19,8 @@ public class Main {
         Person person4 = new Person("Ginny","Weasley");
         person4.addPoints(1000);
         personer[1] = person4;
+        Person person5 = new Person("Draco","Malfoy");
+        personer[4] = person5;
         System.out.println(Arrays.toString(personer));
         for (Person person : personer){
             System.out.println(person);
