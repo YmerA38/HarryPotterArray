@@ -38,6 +38,8 @@ public class Main {
         p = loopMethods.maxPoints(personer);
         System.out.println(p.getFirstName()+" har flest point, med hele "+p.getPoints()+" point");
         System.out.println("Gennemsnittet er : "+loopMethods.avgPoints(personer));
+        String search = "Harry";
+        System.out.println(" finder "+search+"s point :" + loopMethods.findByFirstName(personer,search).getPoints());
 
         //System.out.println("\n"+person1+"\n"+person2+"\n"+person3);
 
