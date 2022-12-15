@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args){
@@ -13,21 +15,20 @@ public class Main {
         person3.addPoints(231);
 
         //Person[] personer = {person1,person2,person3};
-        Person[] personer = new Person[5];
-        personer[0] = person1;
-        personer[2] = person3;
-        personer[3] = person2;
-
+        ArrayList<Person> personer = new ArrayList<>();
+        personer.add(person1);
+        personer.add(person3);
+        personer.add(person2);
         Person person4 = new Person("Ginny","Weasley");
         person4.addPoints(1000);
-        personer[1] = person4;
+        personer.add(1,person4);
         Person person5 = new Person("Draco","Malfoy");
         person5.addPoints(215);
-        personer[4] = person5;
+        personer.add(person5);
         Person person6 = new Person("Nevil","Longbottom");
         person6.addPoints(7);
-        personer[4] = person6;
-        System.out.println(Arrays.toString(personer));
+        personer.add(person6);
+        System.out.println(personer);
         for (Person person : personer){
             System.out.println(person);
         }
